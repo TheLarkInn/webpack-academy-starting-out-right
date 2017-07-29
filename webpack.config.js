@@ -1,3 +1,4 @@
+const buildValidations = require("./build-utils/build-validations");
 const commonConfig = require("./build-utils/webpack.common");
 const webpackMerge = require("webpack-merge");
 
@@ -11,7 +12,7 @@ const addons = (/* string | string[] */ addonsArg) => {
 module.exports = (env) => {
     console.log(env);
     if (!env) {
-        throw new Error(`You must pass an --env.env flag into your build for webpack to work!`)
+        throw new Error(buildValidations.ERR_NO_ENV_FLAG)
     };
     
     const envConfig = require(`./build-utils/webpack.${env.env}.js`);

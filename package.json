@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "bundle-buddy-webpack-plugin": "^0.2.1",
+    "chalk": "^2.0.1",
     "compression-webpack-plugin": "^1.0.0",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^3.0.0",
