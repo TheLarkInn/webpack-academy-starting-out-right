@@ -1,0 +1,29 @@
+{
+  "name": "starting-out-right",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn webpack-dev-server -- --env.env=dev",
+    "build": "yarn webpack -- --env.env=prod",
+    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
+    "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "webpack-dev-server": "webpack-dev-server --port=9000 --hot",
+    "webpack-defaults": "webpack-defaults"
+  },
+  "devDependencies": {
+    "bundle-buddy-webpack-plugin": "^0.2.1",
+    "compression-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "beta",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.3.0",
+    "webpack-bundle-analyzer": "^2.8.3",
+    "webpack-dev-server": "^2.5.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
