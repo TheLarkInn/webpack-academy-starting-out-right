@@ -2,9 +2,8 @@ const commonConfig = require("./build-utils/webpack.common");
 const webpackMerge = require("webpack-merge");
 
 const addons = (/* string | string[] */ addonsArg) => {
-    let addons = []
-        .concat.apply([], [addonsArg])  // Normalize array of addons (flatten)
-        .filter(Boolean);               // If addons is undefined, filter it out
+    let addons = [...addonsArg]  // Normalize array of addons (flatten)
+        .filter(Boolean);        // If addons is undefined, filter it out
 
     return addons.map((addonName) => require(`./build-utils/addons/webpack.${addonName}.js`));
 };
