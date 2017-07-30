@@ -1,6 +1,7 @@
 import createCard from "./card";
 import createArticleAndAddTo from "./article";
 
+import "./markdown.css";
 import "./index.css";
 import "./wasm.png";
 

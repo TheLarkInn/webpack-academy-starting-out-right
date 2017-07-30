@@ -4,7 +4,7 @@ const createAndAppendArticleTo = (staticBodyHtml, appendToElement) => {
     const articleBody = `<div class="article-body">${staticBodyHtml}</div>`;
 
     articleElement.innerHTML = `
-        <div class="article-inner">
+        <div class="article markdown github">
             ${articleBody}
         </div>
     `;
