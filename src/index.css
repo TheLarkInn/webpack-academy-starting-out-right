@@ -1,3 +1,24 @@
 body {
     background: pink;
 }
+
+article {
+    border: 1px solid navy;
+    border-radius: .4em;
+    margin: .5em;
+    padding: 1em;
+}
+
+.article-header {
+    border: 2px solid navy;
+    border-radius: .2em;
+}
+
+code {
+    background: lightgrey;
+}
+
+pre {
+    background: lightgrey;
+}
+
