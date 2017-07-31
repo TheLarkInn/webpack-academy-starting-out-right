@@ -25,7 +25,6 @@ createCard(
 const articlesSection = createArticlesSection();
 
 fetchArticle("number-one").then(htmlString => {
-    debugger
     createArticleAndAddTo(htmlString, articlesSection);
 });
 

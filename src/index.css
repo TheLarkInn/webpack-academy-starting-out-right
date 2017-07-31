@@ -1,7 +1,3 @@
-body {
-    background: whitesmoke
-}
-
 article {
     border: 1px solid navy;
     border-radius: .4em;
@@ -13,12 +9,3 @@ article {
     border: 2px solid navy;
     border-radius: .2em;
 }
-
-code {
-    background: lightgrey;
-}
-
-pre {
-    background: lightgrey;
-}
-
