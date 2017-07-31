@@ -9,7 +9,8 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.js/,
+                test: /\.md/,
+                enforce: "pre",
                 use: [
                     {loader: "our-first-loader"}
                 ]
