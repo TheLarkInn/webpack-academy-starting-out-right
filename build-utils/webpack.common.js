@@ -11,7 +11,7 @@ const config = {
     module: {
         rules: [
             {
-                test:/\.md/,
+                test: /\.md/, 
                 use: [
                     {loader: "html-loader"},
                     {
