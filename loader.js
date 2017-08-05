@@ -2,7 +2,11 @@ const { spellCallback, spellcheck } = require("markdown-spellcheck").default;
 const chalk = require("chalk");
 
 module.exports = function loader(source) {
-
+    const callback = this.async();
+    
+    checkSpellingAsync(source, () => {
+        callback(null, source);
+    })
     return source;
 }
 /**

@@ -13,7 +13,7 @@
     "webpack-defaults": "webpack-defaults"
   },
   "devDependencies": {
-    "bundle-buddy-webpack-plugin": "^0.2.1",
+    "bundle-buddy-webpack-plugin": "^0.3.0",
     "chalk": "^2.0.1",
     "compression-webpack-plugin": "^1.0.0",
     "css-loader": "^0.28.4",
@@ -28,9 +28,9 @@
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "beta",
     "url-loader": "^0.5.9",
-    "webpack": "^3.3.0",
-    "webpack-bundle-analyzer": "^2.8.3",
-    "webpack-dev-server": "^2.5.1",
+    "webpack": "^3.4.1",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.6.1",
     "webpack-merge": "^4.1.0"
   }
 }
